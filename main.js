@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e) {
   const mensagemErro = `O valor B <b>${valorB.value}</b> é MENOR que o valor A <b>${valorA.value}</b>`
   
   
-  if (valorB.value > valorA.value) {
+  if (valorB.valueAsNumber > valorA.valueAsNumber) {
     const containerMensageSucess = document.querySelector('.mensagem-sucesso')
     containerMensageSucess.innerHTML = mensagemSucesso
     containerMensageSucess.style.display = "block"
